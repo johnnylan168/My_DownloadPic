@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button mDownloadPicCompress;
+    private Button mLoadPicFromWeb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,8 +19,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void processView() {
-        mDownloadPicCompress = (Button) findViewById(R.id.downloadPic_compress);
-        mDownloadPicCompress.setOnClickListener(buttonClickListener);
+        mLoadPicFromWeb = (Button) findViewById(R.id.load_pic_from_web_main_btn);
+        mLoadPicFromWeb.setOnClickListener(buttonClickListener);
     }
 
     View.OnClickListener buttonClickListener = new View.OnClickListener() {
@@ -28,8 +28,8 @@ public class MainActivity extends AppCompatActivity {
         public void onClick(View v) {
             Intent intent = new Intent();
             switch (v.getId()) {
-                case R.id.downloadPic_compress:
-                    intent.setClass(MainActivity.this, DownloadPicCompressActivity.class);
+                case R.id.load_pic_from_web_main_btn:
+                    intent.setClass(MainActivity.this, LoadPicFromWebActivity.class);
                     break;
             }
             startActivity(intent);

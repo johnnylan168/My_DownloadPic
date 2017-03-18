@@ -10,8 +10,8 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/downloadPic_compress"
-        android:text="下載圖片(壓縮圖片)"
+        android:id="@+id/load_pic_from_web_main_btn"
+        android:text="從網路位址載入圖片"
         android:layout_margin="10dp"/>
 
 </LinearLayout>
